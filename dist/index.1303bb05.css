@@ -23,11 +23,12 @@ main {
 
 .featured {
   color: #faf2e8;
-  padding-top: 60vh;
+  padding-top: 50vh;
 }
 
 .title {
   font-size: 2.5rem;
+  line-height: 1;
 }
 
 .date {
@@ -99,8 +100,9 @@ em {
   transform: translateY(0);
 }
 
-@media only screen and (width <= 1151px) {
+@media only screen and (width <= 1300px) {
   .featured {
+    margin: 0 40px;
     padding-top: 50vh;
   }
 }

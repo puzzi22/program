@@ -29,12 +29,13 @@ main {
 }
 
 .featured {
-	padding-top: 60vh;
+	padding-top: 50vh;
 	color: rgb(250, 242, 232);
 }
 
 .title {
 	font-size: 2.5rem;
+	line-height: 1;
 }
 
 .date {
@@ -109,9 +110,10 @@ em {
 	opacity: 1;
 }
 
-@media only screen and (max-width: 1151px) {
+@media only screen and (max-width: 1300px) {
 	.featured {
 		padding-top: 50vh;
+		margin: 0 40px;
 	}
 }
 
