@@ -5,6 +5,7 @@
 }
 
 html {
+  overscroll-behavior-x: none;
   background-color: #faf2e8;
   font-family: Raleway, sans-serif;
   font-size: 1.2em;
@@ -15,7 +16,6 @@ html {
 main {
   background-image: linear-gradient(#00000080, #000), url("conservatoire.847a5358.737811a6.webp");
   background-position: top;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: auto;
@@ -92,13 +92,13 @@ em {
 
 .prestation {
   opacity: 0;
-  transition: transform .5s ease-in-out;
-  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+  transform: translateY(100%);
 }
 
 .slide-in {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 @media only screen and (width <= 1151px) {
@@ -110,8 +110,6 @@ em {
 @media only screen and (width <= 768px) {
   main {
     background-image: linear-gradient(#00000080, #000), url("conservatoire-portrait.13a450be.4e092e17.webp");
-    background-position: center;
-    background-size: contain;
   }
 
   section {
